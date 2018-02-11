@@ -4,53 +4,152 @@
       <title>Natalie C. | Web Developer</title>
       <meta charset+"UTF-8">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <!-- This is my CSS file -->
       <link rel="stylesheet" type="text/css" href="./css/style.css">
       <link href="https://fonts.gstatic.com/s/karla/v6/qkBbXvYC6trAT7RbLtyU5rZPoAU.woff2" rel="stylesheet">
-    </head>
+      <!-- This is my icons link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
 
-<body class="blog-page">
-  <nav class="navbar navbar-default">
+
+
+    <body class="blog-page">
+    <nav class="navbar navbar-default">
     <!-- <a class="hamburger" href=""><i class="fa fa-bars"></i></a> -->
+      <div class="mobile-nav">
+        <div class="menu-btn" id="menu-btn">
+          <div></div>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="responsive-menu">
+          <ul>
+            <li>1. Object </li>
+            <li>2. Object </li>
+            <li>3. Object </li>
+          </ul>
+        </div>
+      </div>
       <ul class="nav navbar-nav">
+        <li><a href="index.html#home">Home</a></li>
         <li><a href="index.html#about">About</a></li>
         <li><a href="index.html#portfolio">Portfolio</a></li>
         <li><a href="index.html#quotes">Quotes</a></li>
         <li><a href="index.html#contacts">Contact</a></li>
       </ul>
-
-  </nav>
-      <header class="vertical-class">
-        <div>
-          <h2><a href="index.html">Natalie Contreras</a></h2>
-          <br />
-          <h3>San Francisco born & Oakland based Web Developer</h3>
-        </div>
-      </header>
+    </nav>
+    <header class="vertical-class">
+      <div>
+        <h2><a href="index.html">Natalie Contreras</a></h2>
+        <br />
+        <h3>San Francisco born & Bay Area Web Developer</h3>
+      </div>
+    </header>
     <div class="wrap grid-paper">
       <section>
-        <article>
-          <h3>Portfolio</h3>
-          <img src="" /></img>
-          <p>
-            Projects I've been working on.
-          </p>
-        </article>
-      </section>
-        <aside>
           <h3>About</h3>
-          <p>
-            I'm currently learning Web Development skills through an immersive program at General Assembly in San Francisco. I'm interested in all kinds of visual communication, but my focus is on building functional and responsive web interfaces. I also have skills in other fields like visual media, photography, filmmaking, branding and digital marketing.
-            <br />
-
+          <img id="biopic" src="./images/me.jpg" />
+          </br>
+          <p class="about_description">
+          Web development, design and visual art
           </p>
-          <img src=""></img>
-        </aside>
+          <p class="about-description-2">
+          I'm currently learning Web Development skills through an immersive program at General Assembly in San Francisco. <br />I'm interested in all kinds of visual communication, but my focus is on building functional and responsive web interfaces. I also have skills in other fields like visual media, photography, filmmaking, branding and digital marketing.</p>
+      </section>
+
+
+
+
+
+      <h3>Portfolio</h3>
+      <p> Monument
+        <br />
+          Racer Game
+        <br />
+          Geoquakes</p>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+
+                <div id="my-slider" class="carousel slide" data-ride="carousel">
+                    <!-- indicators dot nav  -->
+
+                    <!-- wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img src="./images/monumentsite.jpg" alt="projects" />
+                        <div class="carousel-caption">
+                          <h1>projects</h1>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="./images/puff2puff.jpg" alt="projects" />
+                        <div class="carousel-caption">
+                          <h1>Puff2Puff</h1>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                </div>
+                  </div>
+
+                  <!-- controls or next and prev buttons -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <aside>
+        <img src="./images/agave.jpg" />
+        <img src="./images/sunsetalameda.jpg" />
+        <img src="./images/gemrings.jpg" />
+        <img src="./images/cubavines.jpg" />
+        <img src="./images/passionflowerpurp.jpg" />
+        <img src="./images/aguapool.jpg" />
+        <img src="./images/havana.jpg" />
+        <img src="./images/xocotaza.jpg" />
+          <img src="">
+      </aside>
     </div>
+
+
+    <script type="text/javascript">
+    	jQuery(function($){
+        	$( '.menu-btn' ).click(function(){
+        		$('.responsive-menu').addClass('expand')
+        		$('.menu-btn').addClass('btn-none')
+        	})
+
+        	 $( '.close-btn' ).click(function(){
+        		$('.responsive-menu').removeClass('expand')
+        		$('.menu-btn').removeClass('btn-none')
+        	})
+      	})
+     </script>
+
+
+     <script type="text/javascript">
+     	jQuery(function($){
+         	     $( '.menu-btn' ).click(function(){
+         	     $('.responsive-menu').toggleClass('expand')
+         	     })
+             })
+     </script>
+
+</body>
 </body>
     <footer>
       <div class="wrap">
         <div class="social-links">
           <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+
         </div>
 
         <div class="Form">
