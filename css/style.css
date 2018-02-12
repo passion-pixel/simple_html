@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-  color:#000000;
+  color: #18BC9C;
 }
 
 h1 a {
@@ -42,21 +42,20 @@ h2, h3, {
   display: flex;
   background-color: black;
   color: #000000;
-  align-content: center;
+  justify-content: center;
   position: fixed;
-  width: 100%;
-  right: 2px;
+  width: 99%;
+  right: 4px;
 }
 
 nav a {
   color: #ffffff;
   text-transform: uppercase;
-  display: inline-block;
   font-family: sans-serif;
   font-size: .75em;
   font-weight: bold;
   text-decoration: none;
-  justify-content: space-around;
+  align-self: space-around;
 }
 
 
@@ -79,14 +78,13 @@ img {
 /* ------------- theme header footer ------------------- */
 
 header {
-  color: #ffffff;
+  color: #000000;
   background-image: url("../images/bernalheightsimg.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 6em 0 2.5em;
-  width: 100%;
   height: 600px;
   margin-bottom: 48px;
   text-align: center;
@@ -105,13 +103,29 @@ nav, footer {
   padding: 0 1em;
 }
 
+.content-wrapper h1 {
+  font-size: 3rem;
+}
+
+
 
 /* --------++++++++-------Sections-----+++++++-------- */
+#portfolio, #testimonials, #contact {
+  margin-top: 40px;
+}
+
+.current {
+  text-decoration: underline;
+}
+
 
 
 
 /*------------- About -------------- */
-
+#biopic {
+  height: 250px;
+  width: 230px;
+}
 
 /* ----------------- Projects ----------------- */
 
@@ -130,6 +144,7 @@ nav, footer {
 
 .carousel-indicators {
   text-align: center;
+  padding-left: 0px;
 }
 
 .carousel-indicators li {
@@ -150,7 +165,7 @@ nav, footer {
 }
 
 
-/*------------ Testimonial Quotes -------------*/
+/*------------ Testimonials -------------*/
 
 blockquote {
   margin-left: 0;
@@ -247,7 +262,7 @@ footer .content-wrapper, .social-links {
     transition: max-height 0.25s ease-in;
   }
 
-  .nav-links a {
+  .navbar-nav a {
     display: inline-block;
     align-self: flex-start;
     margin-left: 0;
@@ -262,15 +277,11 @@ footer .content-wrapper, .social-links {
 }
 
 /*Layout*/
-section {
-  padding: 105px 30 px;
-}
 
 /* figuring things out */
 
-
-
 aside {
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -280,16 +291,4 @@ aside img {
 
 aside a {
   text-transform: none;
-}
-
-.Form {
-  display:flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-basis: 200px;
-}
-
-#biopic {
-  height: 200px;
-  width: 200px;
 }

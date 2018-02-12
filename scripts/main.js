@@ -6,7 +6,6 @@ var currentSlideIndex = 0;
 
 // Find out how many images are in the carousel wrapper
 var numberImages = $('.carousel img').length;
-
 // Set the width of the image wrapper and each image accordingly (responsive, baby!)
 $('.image-wrapper').css('width', numberImages * 100 + '%');
 $('.image-wrapper img').css('width', 100 / numberImages + '%');
@@ -21,7 +20,7 @@ function timerTransition () {
     currentSlideIndex = 0;
   } else {
     // Otherwise advance to the next slide.
-    currentSlideIndex += 1;
+    currentSlideIndex ++;
   }
 
   // Transition that baby!!
@@ -86,7 +85,7 @@ function hideLightbox () {
 // --------------------------
 // Quotes on Timer ----------
 // --------------------------
-$(window).load(function() {
+$(window).ready(function() {
 
 var quoteCounter = 0;
 var quoteLength = $('blockquote').length;
@@ -96,13 +95,13 @@ setInterval(function () {
     if (quoteCounter === quoteLength - 1) {
       quoteCounter = 0;
     } else {
-      quoteCounter += 1;
+      quoteCounter ++;
     }
     $('blockquote').eq(quoteCounter).fadeIn();
   });
 }, 7000);
 
-}
+});
 
 
 // --------------------------
@@ -110,7 +109,7 @@ setInterval(function () {
 // --------------------------
 
 // Do it when someone clicks a nav link
-$('.nav-links a, .logo a').on('click', function(e) {
+$('.navbar-nav a, .logo a').on('click', function(e) {
   // prevent the standard link operation on click
   e.preventDefault();
   // use the href of the link to identify what
@@ -130,7 +129,7 @@ $('.nav-links a, .logo a').on('click', function(e) {
 // Highlight Nav Links on Scroll
 // -----------------------------
 // cache the navigation links
-var $navigationLinks = $('.nav-links a');
+var $navigationLinks = $('.navbar-nav a');
 // cache (in reversed order) the sections
 var $sections = $($("section, header").get().reverse());
 
@@ -138,7 +137,7 @@ var $sections = $($("section, header").get().reverse());
 var sectionIdTonavigationLink = {};
 $sections.each(function() {
     var id = $(this).attr('id');
-    sectionIdTonavigationLink[id] = $('.nav-links a[href="#' + id + '"]');
+    sectionIdTonavigationLink[id] = $('.navbar-nav a[href="#' + id + '"]');
 });
 
 // throttle function, enforces a minimum time interval
@@ -166,7 +165,7 @@ function highlightNavigation() {
     var scrollPosition = $(window).scrollTop();
 
     // iterate the sections
-    $sections.each(function() {
+    $('section').each(function() {
         var currentSection = $(this);
         // get the position of the section
         var sectionTop = currentSection.offset().top - 71;
@@ -191,9 +190,7 @@ function highlightNavigation() {
 }
 
 $(window).scroll( throttle(highlightNavigation, 100) );
-
-
 $('.hamburger').on('click', function (e) {
   e.preventDefault();
-  $('.nav-links').toggleClass('open-menu');
+  $('.nav-link').toggleClass('open-menu');
 });
