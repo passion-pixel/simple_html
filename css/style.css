@@ -1,19 +1,14 @@
 
-* {
+/* * {
   box-sizing: border-box;
   font-family: url(https://fonts.gstatic.com/s/karla/v6/qkBbXvYC6trAT7RbLtyU5rZPoAU.woff2);
-}
-
-htm {
-  font-size: 15px;
-}
+} */
 
 /*header*/
 header {
   color: #ffffff;
   background-image: url("../images/bernalheightsimg.jpg");
   background-attachment: fixed;
-  /* background-color: EDCABF; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,8 +18,9 @@ header {
   text-decoration: none;
 }
 
-.nav navbar-nav {
-  float: left;
+#navbackground {
+  background-color: black;
+  color: #000000;
 }
 
 .vertical-class {
@@ -37,7 +33,7 @@ header {
 }
 
 nav, footer {
-  background-color: #EDCABF;
+  background-color: #ffffff;
 
 }
 
@@ -52,10 +48,6 @@ vertical-class h2 {
   text-decoration: none;
 }
 
-href {
-  color: #000000;
-}
-
 h3 {
   color: #000000;
 }
@@ -66,7 +58,7 @@ body {
   text-transform: uppercase;
   letter-spacing: .02em;
   text-align: center;
-  background-color: #F2DED6;
+  background-color: #ffffff;
 }
 
 img {
@@ -86,12 +78,8 @@ h2, h3, li {
 nav li {
   display: inline-block;
   text-decoration: none;
-
 }
 
-nav a {
-  text-transform: uppercase;
-}
 
 a {
   text-decoration: none;
@@ -114,10 +102,6 @@ section {
   margin: 0 auto;
 }
 
-nav li {
-  display: inline-block;
-}
-
 nav a {
   text-align: center;
   text-transform: uppercase;
@@ -125,7 +109,6 @@ nav a {
 }
 
 header, footer {
-  /* background-color: #CDF3F6; */
   overflow: auto;
 }
 
@@ -162,31 +145,6 @@ aside a {
   flex-basis: 200px;
 }
 
-.menu-btn div {
-	position: absolute;
-	left: 100%;
-	top: 64%;
-	padding-right: 8px;
-	margin-top: -0.50em;
-	line-height: 1.2;
-	font-size: 18px;
-	font-weight: 200;
-	vertical-align: middle;
-	z-index: 99;
-}
-
-.menu-btn span {
-	display: block;
-	width: 19px;
-	height: 3px;
-	margin: 4px 0;
-	background: rgb(0,0,0);
-	z-index: 99;
-}
-
-.responsive-menu{
-	display: none;
-}
 
 .expand {
 	display: block !important;

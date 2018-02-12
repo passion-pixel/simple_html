@@ -1,0 +1,65 @@
+<!-- <a class="hamburger" href=""><i class="fa fa-bars"></i></a>
+      <div class="menu-btn" id="menu-btn"> -->
+
+
+      <!-- <ul>
+        <li>1. Home </li>
+        <li>2. About </li>
+        <li>3. Portfolio </li>
+      </ul>
+    </div>
+  </div>
+  <ul class="nav navbar-nav">
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#portfolio">Portfolio</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul> -->
+
+<!-- <script type="text/javascript">
+  jQuery(function($){
+      $( '.menu-btn' ).click(function(){
+        $('.responsive-menu').addClass('expand')
+        $('.menu-btn').addClass('btn-none')
+      })
+
+       $( '.close-btn' ).click(function(){
+        $('.responsive-menu').removeClass('expand')
+        $('.menu-btn').removeClass('btn-none')
+      })
+    })
+ </script>
+
+
+ <script type="text/javascript">
+  jQuery(function($){
+           $( '.menu-btn' ).click(function(){
+           $('.responsive-menu').toggleClass('expand')
+           })
+         })
+ </script> -->
+
+
+ css
+ /* .menu-btn div {
+ 	position: absolute;
+ 	left: 100%;
+ 	top: 64%;
+ 	padding-right: 8px;
+ 	margin-top: -0.50em;
+ 	line-height: 1.2;
+ 	font-size: 18px;
+ 	font-weight: 200;
+ 	vertical-align: middle;
+ 	z-index: 99;
+ }
+
+ .menu-btn span {
+ 	display: block;
+ 	width: 19px;
+ 	height: 3px;
+ 	margin: 4px 0;
+ 	background: rgb(0,0,0);
+ 	z-index: 99;
+ } */
