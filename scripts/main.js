@@ -86,6 +86,8 @@ function hideLightbox () {
 // --------------------------
 // Quotes on Timer ----------
 // --------------------------
+$(window).load(function() {
+
 var quoteCounter = 0;
 var quoteLength = $('blockquote').length;
 
@@ -99,6 +101,8 @@ setInterval(function () {
     $('blockquote').eq(quoteCounter).fadeIn();
   });
 }, 7000);
+
+}
 
 
 // --------------------------

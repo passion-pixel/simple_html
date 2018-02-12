@@ -1,40 +1,24 @@
-
-/* * {
-  box-sizing: border-box;
-  font-family: url(https://fonts.gstatic.com/s/karla/v6/qkBbXvYC6trAT7RbLtyU5rZPoAU.woff2);
-} */
-
-/*header*/
-header {
-  color: #ffffff;
-  background-image: url("../images/bernalheightsimg.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 600px;
-  margin-bottom: 48px;
-  text-decoration: none;
+html {
+  font-size: 20px;
+  font-family: "Karla", sans-serif;
 }
 
-#navbackground {
-  background-color: black;
+/* ------------------ Typo -------------*/
+
+p {
+  text-align: center;
+  text-transform: none;
   color: #000000;
 }
 
-.vertical-class {
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 200px;
-
+a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
 }
 
-nav, footer {
-  background-color: #ffffff;
-
+a:hover {
+  color:#000000;
 }
 
 h1 a {
@@ -43,77 +27,190 @@ h1 a {
   display: inline-block;
 }
 
-vertical-class h2 {
-  color: #ffffff;
-  text-decoration: none;
-}
-
 h3 {
   color: #000000;
 }
 
+h2, h3, {
+  text-align: center;
+  text-decoration: none;
+}
+
+/* --------------- Nav Bar ---------------- */
+
+#navbackground {
+  display: flex;
+  background-color: black;
+  color: #000000;
+  align-content: center;
+  position: fixed;
+  width: 100%;
+  right: 2px;
+}
+
+nav a {
+  color: #ffffff;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: .75em;
+  font-weight: bold;
+  text-decoration: none;
+  justify-content: space-around;
+}
+
+
+/* --------------- header-------------------*/
+
 body {
   color: #000000;
-  /* font-family: Helvetica, sans-serif; */
   text-transform: uppercase;
   letter-spacing: .02em;
   text-align: center;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
   max-width: 100%;
 }
 
-p{
-  text-align: center;
-  text-transform: none;
-}
+/* ------------- theme header footer ------------------- */
 
-h2, h3, li {
-  text-align: center;
-  text-decoration: none;
-}
-
-nav li {
-  display: inline-block;
-  text-decoration: none;
-}
-
-
-a {
-  text-decoration: none;
+header {
   color: #ffffff;
-  font-weight: 600;
-}
-
-a:hover{
-  color:#0000000;
-}
-
-/*Layout*/
-section {
-  padding: 105px 30 px;
-}
-
-.wrap {
-  max-width: 1000px;
+  background-image: url("../images/bernalheightsimg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 6em 0 2.5em;
   width: 100%;
-  margin: 0 auto;
-}
-
-nav a {
+  height: 600px;
+  margin-bottom: 48px;
   text-align: center;
-  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav, footer {
+  background-color: #ffffff;
+}
+
+/* ------------------ Laylow---------------*/
+
+.content-wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+
+/* --------++++++++-------Sections-----+++++++-------- */
+
+
+
+/*------------- About -------------- */
+
+
+/* ----------------- Projects ----------------- */
+
+.carousel {
+  overflow: hidden;
+}
+
+.image-wrapper {
+  display: flex;
+  transition: all .3s ease-in-out;
+}
+
+.image-wrapper img {
+  align-self: center;
+}
+
+.carousel-indicators {
+  text-align: center;
+}
+
+.carousel-indicators li {
   display: inline-block;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border: 2px solid #888;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: white;
+  transition: all .3s ease-in-out;
 }
 
-header, footer {
-  overflow: auto;
+.carousel-indicators .active {
+  background-color: #2C3E50;
+  border: 2px solid #2C3E50;
 }
 
 
-.social-links a {
+/*------------ Testimonial Quotes -------------*/
+
+blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  display: none;
+}
+
+blockquote:first-of-type {
+  display: block;
+}
+
+/*----------- forms ----------------*/
+
+input, textarea {
+  font-size: .75rem;
+  width: 75%;
+  padding: 10px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: .9rem;
+  outline: none;
+}
+
+label {
+  margin-bottom: .4rem;
+  display: block;
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #18BC9C;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 4px;
+  font-size: .75rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .04rem;
+  font-weight: 700;
+}
+
+.copyright {
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  overflow: hidden;
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+}
+
+footer .content-wrapper, .social-links {
+  display: flex;
   font-size: 30px;
   padding: 15px;
   margin-bottom: 30px;
@@ -121,9 +218,56 @@ header, footer {
   color: #000000;
 }
 
-.copyright {
-  text-align: center;
+/* ---------- Media Queries ---------- */
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 18px;
+  }
+
+  .about-content {
+    column-count: 1;
+  }
+
+  .nav-links {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
+    order: 3;
+/*     display: flex; */
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding-top: 1rem;
+  }
+
+  .open-menu {
+    display: flex;
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    align-self: flex-start;
+    margin-left: 0;
+    font-size: .8rem;
+    padding: .25rem 0;
+  }
+
+  .mobile-nav {
+    display: inline-block;
+    margin-left: auto;
 }
+}
+
+/*Layout*/
+section {
+  padding: 105px 30 px;
+}
+
+/* figuring things out */
+
 
 
 aside {
@@ -143,11 +287,6 @@ aside a {
   flex-direction: column;
   align-items: flex-start;
   flex-basis: 200px;
-}
-
-
-.expand {
-	display: block !important;
 }
 
 #biopic {

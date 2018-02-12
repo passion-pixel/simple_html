@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-      <title>Natalie C. | Web Developer</title>
+
       <meta charset+"UTF-8">
-      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-      <!-- This is my CSS file -->
-      <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+      <title>Natalie C. | Web Developer</title>
+
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
       <!-- This is my Karla font link -->
       <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
       <!-- This is my icons link -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="jquery-3.3.1.min.js"></script>
+      <!-- This is my CSS file -->
+      <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
-    <body>
 
-        </div>
-      <nav class="navbar navbar-toggleable-sm" id="navbackground">
-        <div class="container">
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<body id="top-page">
+  <nav class="navbar navbar-toggleable-sm" id="navbackground">
+    <div class="container">
+        <!-- <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+
           <div class="collapse navbar-collapse" id="mainNav">
             <div class="navbar-nav">
               <a class="nav-item nav-link active" href="index.html#home">Home</a>
@@ -33,48 +38,62 @@
       </nav>
 
 
-    <header class="vertical-class">
-      <div>
+    <header>
+      <div="content-wrapper">
         <h2><a href="index.html">Natalie Contreras</a></h2>
         <br />
         <h3>San Francisco born & Bay Area Web Developer</h3>
       </div>
     </header>
-    <div class="wrap grid-paper">
-      <section>
-          <h3>About</h3>
-          <img id="biopic" src="./images/me.jpg" />
-          </br>
-          <p class="about_description">
-          Web development, design and visual art
-          </p>
-          <p class="about-description-2">
-          I'm currently learning Web Development skills through an immersive program at General Assembly in San Francisco. <br />I'm interested in all kinds of visual communication, but my focus is on building functional and responsive web interfaces. I also have skills in other fields like visual media, photography, filmmaking, branding and digital marketing.</p>
+
+    <section id="about" class="shoutout">
+    <div class="content-wrapper">
+          <h2>About</h2>
+          <br>
+          <img id="biopic" src="./images/nata.png" />
+          <br>
+          <div class="about_description">
+            <p>Web development, design and visual art</p>
+            <p class="about-description-2">I'm currently learning Web Development skills through an immersive program at General Assembly in San Francisco. I'm interested in all kinds of visual communication, but my focus is on building functional and responsive web interfaces. I also have skills in other fields like visual media, photography, filmmaking, branding and digital marketing.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="portfolio">
+        <h2>Projects</h2>
+        <br />
+        <div class="content-wrapper">
+          <div class="carousel">
+            <div class="image-wrapper">
+            <img src="images/monumentsite.jpg" alt="">
+            <img src="images/puff2puff.jpg" alt="">
+
+          </div>
+        </div>
+        <ul class="carousel-indicators">
+          <li data-slide-number="0" class="active"></li>
+          <li data-slide-number="1"></li>
+          <li data-slide-number="2"></li>
+          </ul>
+        </div>
       </section>
 
 
 
-
-
-      <h3>Portfolio</h3>
-      <p> Monument
-        <br />
-          Racer Game
-        <br />
-          Geoquakes</p>
-
+<!--
           <div class="container">
             <div class="row">
               <div class="col-sm-12">
 
                 <div id="my-slider" class="carousel slide" data-ride="carousel">
-                    <!-- indicators dot nav  -->
+                    <! indicators dot nav  >
                     <ol class="carousel-indicators">
                         <li data-target="#my-slider" data-slide-to="0" class="active"> </li>
                         <li data-target="#my-slider" data-slide-to="1"> </li>
                     </ol>
 
-                    <!-- wrapper for slides -->
+                    <!wrapper for slides >
                     <div class="carousel-inner" role="listbox">
                       <div class="item active">
                         <img src="./images/monumentsite.jpg" alt="projects" />
@@ -91,7 +110,7 @@
                     </div>
 
 
-                  <!-- controls or next and prev buttons -->
+                  <!controls or next and prev buttons >
                   <a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -103,9 +122,64 @@
                 </div>
               </div>
             </div>
+          </div> -->
+
+        <section id="testimonials" class="shoutout">
+          <div class="content-wrapper">
+            <h2>Testimonials</h2>
+            <br>
+            <blockquote>
+              <p>
+                Quote 1
+              </p>
+              <p>
+                - name
+              </p>
+            </blockquote>
+
+            <blockquote>
+              <p>
+                Quote 2
+              </p>
+              <p>
+                - name
+              </p>
+            </blockquote>
+
+            <blockquote>
+              <p>
+                Quote 3
+              </p>
+              <p>
+                - name
+              </p>
+            </blockquote>
+
           </div>
 
-      <aside>
+        </section>
+
+        <section id="contact">
+          <div class="content-wrapper">
+            <h2>Contact Me</h2>
+            <br>
+            <form action="">
+              <label for="name">Name</label>
+              <input type="text" placeholder="Name" id="name">
+              <label for="email">Email Address</label>
+              <input type="text" placeholder="Email Address" id="email">
+              <label for="phone">Phone Number</label>
+              <input type="text" placeholder="Phone Number" id="phone">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" placeholder="Message"></textarea>
+              <br/>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </section>
+
+
+      <!-- <aside>
         <img src="./images/agave.jpg" />
         <img src="./images/sunsetalameda.jpg" />
         <img src="./images/gemrings.jpg" />
@@ -116,33 +190,31 @@
         <img src="./images/xocotaza.jpg" />
           <img src="">
       </aside>
-    </div>
+    </div> -->
 
-<script="main.js"></script>
 
-</body>
+
+
     <footer>
-      <div class="wrap">
+      <div class="content-wrapper">
         <div class="social-links">
-          <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-
-        </div>
-
-        <div class="Form">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Phone Number" />
-          <input type="text" placeholder="Message" />
-          <button type="submit">Keep in Touch</button>
+          <span>
+            <a href=""><i class="fa fa-twitter-square"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin-square"></i></a>
+          </span>
         </div>
 
       </div>
 
-      <p class="copyright">
-        &copy;2018 Natalie Contreras
-      </p>
+      <div class="copyright">
+        <p>&copy;2018 Natalie Contreras</p>
+      </div>
     </footer>
+
+
+
+<script href="scripts/main.js"></script>
+</body>
 
 </html>
